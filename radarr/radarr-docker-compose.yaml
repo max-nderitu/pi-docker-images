@@ -1,0 +1,20 @@
+---
+version: "3"
+services:
+  radarr:
+    labels:
+      - com.centurylinklabs.watchtower.enable=true
+    image: lscr.io/linuxserver/radarr
+    container_name: radarr
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Africa/Nairobi
+    volumes:
+      - /srv/my-mount/config/radarr:/config
+      - /srv/my-mount/WD/_New:/media
+      - /srv/my-mount/WD/_Downloads:/data
+      - /srv/my-mount/WD/Movies:/movies
+    ports:
+      - 7878:7878
+    restart: unless-stopped

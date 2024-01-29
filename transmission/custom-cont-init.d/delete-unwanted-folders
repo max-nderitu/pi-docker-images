@@ -1,0 +1,4 @@
+#!/usr/bin/with-contenv bash
+
+# Delete unnecessary folders
+rmdir /downloads/{complete,incomplete}

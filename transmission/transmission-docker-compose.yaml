@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  transmission:
+    image: lscr.io/linuxserver/transmission:3.00-r5-ls134
+    labels:
+      - com.centurylinklabs.watchtower.enable=true
+    ports:
+      - "9091:9091"
+      - "51413:51413"  # peer port
+    restart: unless-stopped
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Africa/Nairobi
+      - USER=transmission #optional
+      - PASS=808080 #optional
+      - TRANSMISSION_WEB_HOME=/flood-for-transmission/ 
+    volumes:
+      - /srv/my-mount/WD/_Downloads:/data
+      - /srv/my-mount/incomplete:/incomplete
+      - /srv/my-mount/config/transmission:/config
+      - ./custom-cont-init.d:/custom-cont-init.d:ro
+      - ./transmission-settings.json:/config/settings.json:ro
+

@@ -1,0 +1,29 @@
+version: "3.3"
+services:
+  portainer:
+    labels:
+      - com.centurylinklabs.watchtower.enable=true
+    ports:
+      - "8000:8000"
+      - "9000:9000"
+    container_name: portainer
+    restart: always
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
+      - "portainer_data:/data"
+    image: "cr.portainer.io/portainer/portainer-ce:latest"
+
+  watchtower:
+    image: containrrr/watchtower
+    restart: always
+    command: --label-enable --cleanup
+    environment:
+      - WATCHTOWER_POLL_INTERVAL=3600
+    logging:
+      options:
+        max-size: 10m
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+volumes:
+  portainer_data:
+

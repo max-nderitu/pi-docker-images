@@ -1,0 +1,11 @@
+{
+    "download-dir": "/data/",
+    "incomplete-dir": "/incomplete/",
+    "incomplete-dir-enabled": "true",
+    "rpc-whitelist": "*",
+    "rpc-host-whitelist-enabled": "false",
+    "download-queue-enabled": "false",
+    "ratio-limit-enabled": "true", 
+    "ratio-limit": "1",
+    "idle-seeding-limit-enabled": "true"
+}

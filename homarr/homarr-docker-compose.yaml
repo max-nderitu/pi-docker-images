@@ -1,0 +1,15 @@
+version: '3'
+services:
+  homarr:
+    labels:
+      - com.centurylinklabs.watchtower.enable=true
+    container_name: homarr
+    image: ghcr.io/ajnart/homarr:latest
+    restart: unless-stopped
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /srv/my-mount/config/homarr:/app/data/configs
+      - /srv/my-mount/config/homarr/icons:/app/public/icons
+      - /srv/my-mount/config/homarr/data:/data
+    ports:
+      - '7575:7575'
