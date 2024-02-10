@@ -13,7 +13,7 @@ services:
     volumes:
       - /srv/my-mount/config/radarr:/config
       - /srv/my-mount/WD/_New:/media
-      - /srv/my-mount/WD/_Downloads:/data
+      - /srv/my-mount/WD/_Downloads:/downloads
       - /srv/my-mount/WD/Movies:/movies
     ports:
       - 7878:7878
