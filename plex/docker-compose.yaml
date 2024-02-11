@@ -15,5 +15,5 @@ services:
       - /srv/my-mount/config/plex:/config
       - /srv/my-mount/WD/Series:/tv
       - /srv/my-mount/WD/Movies:/movies
-      - /srv/my-mount/WD/_New:/new
+      - /srv/my-mount/WD/Continuing:/continuing
     restart: unless-stopped
