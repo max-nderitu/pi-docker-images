@@ -2,7 +2,7 @@ version: '3'
 
 services:
   transmission:
-    image: lscr.io/linuxserver/transmission:latest
+    image: lscr.io/linuxserver/transmission:3.00-r5-ls134
     labels:
       - com.centurylinklabs.watchtower.enable=true
     ports:
@@ -15,6 +15,7 @@ services:
       - TZ=Africa/Nairobi
       - USER=transmission #optional
       - PASS=808080 #optional
+      - TRANSMISSION_WEB_HOME=/flood-for-transmission/ 
     volumes:
       - /srv/my-mount/WD/_Downloads:/data
       - /srv/my-mount/incomplete:/incomplete
