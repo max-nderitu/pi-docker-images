@@ -12,7 +12,7 @@ services:
       - TZ=Africa/Nairobi
     volumes:
       - /srv/my-mount/config/sonarr:/config
-      - /srv/my-mount/WD/_New:/media
+      - /srv/my-mount/WD/_New:/continuing
       - /srv/my-mount/WD/_Downloads:/downloads
       - /srv/my-mount/WD/Series:/series
     ports:
