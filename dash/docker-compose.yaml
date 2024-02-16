@@ -2,6 +2,8 @@ version: '3'
 
 services:
   dash:
+    labels:
+      - com.centurylinklabs.watchtower.enable=true
     image: mauricenino/dashdot:latest
     restart: unless-stopped
     privileged: true

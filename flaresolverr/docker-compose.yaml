@@ -2,6 +2,8 @@ version: '3'
 
 services:
   flaresolverr:
+    labels:
+      - com.centurylinklabs.watchtower.enable=true
     image: ghcr.io/flaresolverr/flaresolverr:latest
     container_name: flaresolverr
     environment:
