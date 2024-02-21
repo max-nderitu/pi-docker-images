@@ -2,6 +2,7 @@ version: '3'
 
 services:
   transmission:
+    container_name: transmission
     labels:
       - com.centurylinklabs.watchtower.enable=true
     image: lscr.io/linuxserver/transmission:3.00-r5-ls134

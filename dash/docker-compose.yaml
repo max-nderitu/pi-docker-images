@@ -2,6 +2,7 @@ version: '3'
 
 services:
   dash:
+    container_name: dash
     labels:
       - com.centurylinklabs.watchtower.enable=true
     image: mauricenino/dashdot:latest

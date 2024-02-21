@@ -2,6 +2,7 @@ version: '3'
 
 services:
   jackett:
+    container_name: jackett
     labels:
       - com.centurylinklabs.watchtower.enable=true
     image: lscr.io/linuxserver/jackett:latest
