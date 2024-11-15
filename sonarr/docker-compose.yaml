@@ -15,6 +15,7 @@ services:
       - /srv/my-mount/WD/Continuing:/continuing
       - /srv/my-mount/WD/Downloads:/downloads
       - /srv/my-mount/WD/Series:/series
+      - /srv/my-mount/WD/Anime:/anime
     ports:
       - 8989:8989
     restart: unless-stopped

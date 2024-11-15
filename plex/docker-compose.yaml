@@ -16,4 +16,5 @@ services:
       - /srv/my-mount/WD/Series:/tv
       - /srv/my-mount/WD/Movies:/movies
       - /srv/my-mount/WD/Continuing:/continuing
+      - /srv/my-mount/WD/Anime:/anime
     restart: unless-stopped
