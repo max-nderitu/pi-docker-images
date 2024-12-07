@@ -18,9 +18,9 @@ services:
       - PASS=808080 #optional
       - TRANSMISSION_WEB_HOME=/flood-for-transmission/ 
     volumes:
-      - /srv/my-mount/WD/Downloads:/downloads
-      - /srv/my-mount/WD/Downloads/incomplete:/incomplete
-      - /srv/my-mount/config/transmission:/config
+      - /srv/ssd1/WD/Downloads:/downloads
+      - /srv/ssd1/WD/Downloads/incomplete:/incomplete
+      - /srv/ssd1/config/transmission:/config
       - ./custom-cont-init.d:/custom-cont-init.d:ro
       - ./transmission-settings.json:/config/settings.json:ro
 

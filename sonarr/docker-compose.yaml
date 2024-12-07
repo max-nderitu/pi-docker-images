@@ -11,11 +11,14 @@ services:
       - PGID=1000
       - TZ=Africa/Nairobi
     volumes:
-      - /srv/my-mount/config/sonarr:/config
-      - /srv/my-mount/WD/Continuing:/continuing
-      - /srv/my-mount/WD/Downloads:/downloads
-      - /srv/my-mount/WD/Series:/series
-      - /srv/my-mount/WD/Anime:/anime
+      - /srv/ssd1/config/sonarr:/config
+      - /srv/ssd1/WD/Continuing:/continuing
+      - /srv/ssd1/WD/Downloads:/downloads
+      - /srv/ssd1/WD/Series:/series
+      - /srv/ssd1/WD/Anime:/anime
+      - /srv/ssd2/WD/Series:/series2
+      - /srv/ssd2/WD/Continuing:/continuing2
+      - /srv/ssd2/WD/Anime:/anime2
     ports:
       - 8989:8989
     restart: unless-stopped

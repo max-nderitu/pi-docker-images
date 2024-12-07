@@ -10,7 +10,7 @@ services:
       - PGID=1000
       - TZ=Africa/Nairobi
     volumes:
-      - /srv/my-mount/config/overseerr:/config
+      - /srv/ssd1/config/overseerr:/config
     ports:
       - 5055:5055
     restart: unless-stopped

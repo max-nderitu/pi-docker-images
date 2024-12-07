@@ -12,9 +12,13 @@ services:
       - VERSION=docker
       - PLEX_CLAIM=claim-jT_t4A18PZGW8rrKwbmQ
     volumes:
-      - /srv/my-mount/config/plex:/config
-      - /srv/my-mount/WD/Series:/tv
-      - /srv/my-mount/WD/Movies:/movies
-      - /srv/my-mount/WD/Continuing:/continuing
-      - /srv/my-mount/WD/Anime:/anime
+      - /srv/ssd1/config/plex:/config
+      - /srv/ssd1/WD/Series:/tv
+      - /srv/ssd1/WD/Movies:/movies
+      - /srv/ssd1/WD/Continuing:/continuing
+      - /srv/ssd1/WD/Anime:/anime
+      - /srv/ssd2/WD/Series:/tv2
+      - /srv/ssd2/WD/Movies:/movies2
+      - /srv/ssd2/WD/Continuing:/continuing2
+      - /srv/ssd2/WD/Anime:/anime2
     restart: unless-stopped

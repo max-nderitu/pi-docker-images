@@ -8,8 +8,8 @@ services:
     restart: unless-stopped
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - /srv/my-mount/config/homarr:/app/data/configs
-      - /srv/my-mount/config/homarr/icons:/app/public/icons
-      - /srv/my-mount/config/homarr/data:/data
+      - /srv/ssd1/config/homarr:/app/data/configs
+      - /srv/ssd1/config/homarr/icons:/app/public/icons
+      - /srv/ssd1/config/homarr/data:/data
     ports:
       - '7575:7575'

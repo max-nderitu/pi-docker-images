@@ -11,9 +11,10 @@ services:
       - PGID=1000
       - TZ=Africa/Nairobi
     volumes:
-      - /srv/my-mount/config/radarr:/config
-      - /srv/my-mount/WD/Downloads:/downloads
-      - /srv/my-mount/WD/Movies:/movies
+      - /srv/ssd1/config/radarr:/config
+      - /srv/ssd1/WD/Downloads:/downloads
+      - /srv/ssd1/WD/Movies:/movies
+      - /srv/ssd2/WD/Movies:/movies2
     ports:
       - 7878:7878
     restart: unless-stopped

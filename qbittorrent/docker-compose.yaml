@@ -11,8 +11,8 @@ services:
       - TZ=Africa/Nairobi
       - WEBUI_PORT=8080
     volumes:
-      - /srv/my-mount/config/qbittorrent:/config
-      - /srv/my-mount/WD/_Downloads:/downloads
+      - /srv/ssd1/config/qbittorrent:/config
+      - /srv/ssd1/WD/_Downloads:/downloads
     ports:
       - 8080:8080
       - 6881:6881
