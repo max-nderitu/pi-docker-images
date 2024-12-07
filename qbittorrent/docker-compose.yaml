@@ -12,7 +12,7 @@ services:
       - WEBUI_PORT=8080
     volumes:
       - /srv/ssd1/config/qbittorrent:/config
-      - /srv/ssd1/WD/_Downloads:/downloads
+      - /srv/ssd1/SSD1/_Downloads:/downloads
     ports:
       - 8080:8080
       - 6881:6881

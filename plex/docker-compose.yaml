@@ -13,12 +13,12 @@ services:
       - PLEX_CLAIM=claim-jT_t4A18PZGW8rrKwbmQ
     volumes:
       - /srv/ssd1/config/plex:/config
-      - /srv/ssd1/WD/Series:/tv
-      - /srv/ssd1/WD/Movies:/movies
-      - /srv/ssd1/WD/Continuing:/continuing
-      - /srv/ssd1/WD/Anime:/anime
-      - /srv/ssd2/WD/Series:/tv2
-      - /srv/ssd2/WD/Movies:/movies2
-      - /srv/ssd2/WD/Continuing:/continuing2
-      - /srv/ssd2/WD/Anime:/anime2
+      - /srv/ssd1/SSD1/Series:/tv
+      - /srv/ssd1/SSD1/Movies:/movies
+      - /srv/ssd1/SSD1/Continuing:/continuing
+      - /srv/ssd1/SSD1/Anime:/anime
+      - /srv/ssd2/SSD2/Series:/tv2
+      - /srv/ssd2/SSD2/Movies:/movies2
+      - /srv/ssd2/SSD2/Continuing:/continuing2
+      - /srv/ssd2/SSD2/Anime:/anime2
     restart: unless-stopped

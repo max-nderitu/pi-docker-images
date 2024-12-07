@@ -12,9 +12,9 @@ services:
       - TZ=Africa/Nairobi
     volumes:
       - /srv/ssd1/config/radarr:/config
-      - /srv/ssd1/WD/Downloads:/downloads
-      - /srv/ssd1/WD/Movies:/movies
-      - /srv/ssd2/WD/Movies:/movies2
+      - /srv/ssd1/SSD1/Downloads:/downloads
+      - /srv/ssd1/SSD1/Movies:/movies
+      - /srv/ssd2/SSD2/Movies:/movies2
     ports:
       - 7878:7878
     restart: unless-stopped
