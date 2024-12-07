@@ -13,10 +13,10 @@ services:
       - /srv/ssd1/SSD1/Continuing:/continuing
       - /srv/ssd1/SSD1/Downloads:/downloads
       - /srv/ssd1/SSD1/Series:/series
-      - /srv/ssd1/SSD1/Anime:/anime
+      - /srv/ssd1/SSD1/Anime:/anime2
       - /srv/ssd2/SSD2/Series:/series2
       - /srv/ssd2/SSD2/Continuing:/continuing2
-      - /srv/ssd2/SSD2/Anime:/anime2
+      - /srv/ssd2/SSD2/Anime:/anime
     ports:
       - 8989:8989
     restart: unless-stopped
