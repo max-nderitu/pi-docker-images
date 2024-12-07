@@ -11,8 +11,8 @@ services:
     volumes:
       - /srv/ssd1/config/radarr:/config
       - /srv/ssd1/SSD1/Downloads:/downloads
-      - /srv/ssd1/SSD1/Movies:/movies
-      - /srv/ssd2/SSD2/Movies:/movies2
+      - /srv/ssd1/SSD1/Movies:/movies2
+      - /srv/ssd2/SSD2/Movies:/movies
     ports:
       - 7878:7878
     restart: unless-stopped

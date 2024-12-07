@@ -13,7 +13,7 @@ services:
       - /srv/ssd1/config/jellyfin:/config
       - /srv/ssd1/SSD1/Series:/data/tvshows
       - /srv/ssd1/SSD1/_New:/data/new
-      - /srv/ssd1/SSD1/Movies:/data/movies
+      - /srv/ssd1/SSD2/Movies:/data/movies
     ports:
       - 8096:8096
       - 8920:8920 #optional
