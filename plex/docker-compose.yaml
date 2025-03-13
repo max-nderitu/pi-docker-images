@@ -15,7 +15,7 @@ services:
       - /srv/ssd1/SSD1/Series:/tv
       - /srv/ssd1/SSD1/Movies:/movies2
       - /srv/ssd1/SSD1/Continuing:/continuing
-      - /srv/ssd1/SSD1/Anime:/anime1
+      - /srv/ssd1/SSD1/Anime:/anime2
       - /srv/ssd2/SSD2/Series:/tv2
       - /srv/ssd2/SSD2/Movies:/movies
       - /srv/ssd2/SSD2/Continuing:/continuing2
